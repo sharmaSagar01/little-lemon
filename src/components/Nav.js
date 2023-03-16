@@ -1,27 +1,28 @@
 import React from "react";
+import "../styles/Nav.css";
 
 const Nav = () => {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <a href="/home">HOME</a>
+        <ul className="header-nav">
+          <li className="nav-item">
+            <a href="/#">HOME</a>
           </li>
-          <li>
-            <a href="/about">ABOUT</a>
+          <li className="nav-item">
+            <a href="/#">ABOUT</a>
           </li>
-          <li>
-            <a href="/menu">MENU</a>
+          <li className="nav-item">
+            <a href="/#">MENU</a>
           </li>
-          <li>
-            <a href="/reservation">RESERVATION</a>
+          <li className="nav-item">
+            <a href="/#">RESERVATION</a>
           </li>
-          <li>
-            <a href="/order-online">ORDER ONLINE</a>
+          <li className="nav-item">
+            <a href="/#">ORDER ONLINE</a>
           </li>
-          <li>
-            <a href="/login">LOGIN</a>
+          <li className="nav-item">
+            <a href="/#">LOGIN</a>
           </li>
         </ul>
       </nav>

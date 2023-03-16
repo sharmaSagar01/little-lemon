@@ -1,0 +1,13 @@
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: center;
+  list-style: none;
+}
+.nav-item {
+  padding: 1rem;
+}
+
+.nav-item > a {
+  text-decoration: none;
+}
