@@ -1,25 +1,24 @@
 import React from "react";
 import "../styles/Home.css";
+import About from "./About";
 import Footer from "./Footer";
 import Header from "./Header";
+import HeroSection from "./HeroSection";
+import Menu from "./Menu";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
     <>
       <Header />
       <main>
-        <section id="hero-section">
-          <h1>Hero Section</h1>
-        </section>
-        <section id="menu-section">
-          <h1>Cards</h1>
-        </section>
-        <section id="testimonial-section">
-          <h1>Testimonial</h1>
-        </section>
-        <section id="about-section">
-          <h1>About</h1>
-        </section>
+        <HeroSection />
+
+        <Menu />
+
+        <Testimonial />
+
+        <About />
       </main>
       <Footer />
     </>

@@ -1,11 +1,15 @@
-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 2rem;
-  align-items: center;
+.navbar {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 222, 222);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-img {
+.navbar-logo {
   width: 300px;
   cursor: pointer;
+  padding: 1rem;
 }
