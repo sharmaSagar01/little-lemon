@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/HeroSection.css";
+import { useNavigate } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroSection = ({ pageType }) => {
+  const navigate = useNavigate();
   return (
     <div className="hero-container">
       <div className="hero-description">
@@ -12,7 +14,15 @@ const HeroSection = () => {
           predefined chunks as necessary, making this the first true generator
           on the Internet.
         </p>
-        <button className="hero-button">Reserve a Table</button>
+        {pageType === "home" ? (
+          <button className="hero-button" onClick={() => navigate("/booking")}>
+            Reserve a Table
+          </button>
+        ) : (
+          <button className="hero-button" onClick={() => navigate("/")}>
+            Back to Home
+          </button>
+        )}
       </div>
       <div className="hero-image">
         <img

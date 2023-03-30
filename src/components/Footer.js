@@ -1,12 +1,15 @@
 import React from "react";
 import "../styles/Footer.css";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <img
         className="footer-logo"
         src="https://jordanbr.pythonanywhere.com/static/restaurant/img/logo.png"
         alt=""
+        onClick={() => navigate("/")}
       />
       <div className="footer-nav">
         <h1>NAVIGATION</h1>

@@ -1,0 +1,42 @@
+.container {
+  display: inline-block;
+  text-align: center;
+  margin: 30px;
+  width: 200px;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 10px;
+  padding: 0.5rem;
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  margin-right: 2rem;
+  background-color: rgb(10, 115, 103);
+  color: #fff;
+}
+container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.testimonial-user img {
+  margin-top: 1rem;
+  margin-bottom: 5px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+}
+.tetimonial-user {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.testimonial-compliment {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 1rem;
+}

@@ -8,11 +8,12 @@ import Menu from "./Menu";
 import Testimonial from "./Testimonial";
 
 const Home = () => {
+  const pageType = "home";
   return (
     <>
       <Header />
       <main>
-        <HeroSection />
+        <HeroSection pageType={pageType} />
 
         <Menu />
 

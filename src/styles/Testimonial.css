@@ -1,65 +1,50 @@
-.menu {
+.testimonial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
+  background-color: #395b64;
+  padding: 1rem;
 }
 
-.menu__heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__heading > h1 {
+.testimonial > h1 {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
-}
-
-.menu__heading > button {
-  width: fit-content;
-  padding: 1rem;
-  height: 50px;
-  border: none;
-  background-color: brown;
   color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
 }
 
-.menu__heading > button:hover {
-  background-color: rgb(170, 7, 7);
-}
-.menu__controls {
+.testimonial__controls {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
-.menu__control {
+.testimonial__control {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border: none;
-  margin: 5px;
+  margin-right: 14px;
+  margin-left: 14px;
   padding: 10px;
-  background-color: rgb(22, 109, 109);
-  color: #fff;
+  background-color: rgb(144, 151, 151);
+  color: black;
   cursor: pointer;
 }
-.menu__control:hover {
-  background-color: rgb(20, 161, 161);
+.testimonial__control:hover {
+  background-color: #fff;
+  color: black;
 }
-.menu__body {
+
+.testimonial__body {
   display: flex;
   width: 100%;
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth; /* this will enable smooth scrolling */
@@ -67,12 +52,13 @@
   -webkit-overflow-scrolling: touch; /* this will enable smooth scrolling on iOS devices */
 }
 
-.menu__body > * {
+.testimonial__body > * {
   flex: 0 0 auto; /* this will prevent the cards from shrinking or growing */
   width: 70%; /* adjust this value to fit your design */
   margin-right: 2%; /* adjust this value to fit your design */
   scroll-snap-align: center; /* this will align the cards to the center of the scrolling axis */
 }
-.menu__body::-webkit-scrollbar {
+
+.testimonial__body::-webkit-scrollbar {
   display: none;
 }
